@@ -8,6 +8,6 @@ services:
         ports:
             - '8200:1970'
         volumes:
-            - ./music:/root/music
+            - ./music:/root/.music
             - ./swingmusic-config:/root/.config/swingmusic
         restart: unless-stopped
