@@ -9,7 +9,7 @@ services:
             - '8200:1970'
         volumes:
             - ./music:/root/music
-            - ./swingmusic-config:/root/.config/swingmusic
+#            - ./swingmusic-config:/root/.config/swingmusic
             - ./data:/data
-            - ./music:/music
+#            - ./music:/music
         restart: unless-stopped
