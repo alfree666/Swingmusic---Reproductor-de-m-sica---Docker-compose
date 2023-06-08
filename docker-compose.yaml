@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+    swingmusic:
+        image: bitnik212/swingmusic:latest    
+        container_name: swingmusic
+        ports:
+            - '8200:1970'
+        volumes:
+            - ./music-folder:/root/music'
+            - ./swingmusic-config:/root/.config/swingmusic'
+        restart: unless-stopped
