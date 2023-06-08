@@ -11,3 +11,4 @@ services:
             - ./music:/root/music
             - ./data:/data
         restart: unless-stopped
+
